@@ -1,9 +1,13 @@
-<h1>
-    Event Binding in Angular Basics - {{ title() }}
-</h1>
+<h1>Property Binding</h1>
+<button [disabled]="btnDisabled">Get Started</button>
+<br>
+<button disabled="{{btnDisabled}}">click here</button>
+<br>
+<br>
+<button (click)="toggleBtn()">Toggle disabled</button>
 
-<button (click)="callMe()"> Click here</button>
+<input type="text" placeholder="Enter here - Interpollation" readonly="{{inputReadOnly}}">
+<input type="text" placeholder="Enter here - Property Binding" [readonly]="inputReadOnly">
 
-<h1>Counter: {{ count }}</h1>
-<button (click)="counter('increment')"> Increment </button> &nbsp;
-<button (click)="counter('decrement')"> Decrement </button>
+<!-- Signals -->
+ 
