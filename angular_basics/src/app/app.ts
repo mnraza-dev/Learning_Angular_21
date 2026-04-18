@@ -15,4 +15,17 @@ export class App {
   getSum(a: number, b: number) {
     return a + b;
   }
+
+  callMe() {
+    alert("Hello " + this.name + ", you are " + this.age + " years old.");
+  }
+  count: number = 0;
+  counter(action: string) {
+    if (action === 'increment') {
+      this.count++;
+    } else if (action === 'decrement') {
+      this.count > 0 && this.count--;
+    }
+
+  }
 }
