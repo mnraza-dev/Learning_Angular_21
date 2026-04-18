@@ -1,4 +1,4 @@
-# 🚀 Angular 21
+# 🚀 Angular 21 Guide
 
 A beginner-friendly guide covering core Angular concepts, CLI usage, and basic features to get started quickly.
 
@@ -8,9 +8,8 @@ A beginner-friendly guide covering core Angular concepts, CLI usage, and basic f
 
 * 1. Interpolation
 * 2. Angular CLI
-* 3. 
-* 4. 
-* 5. 
+* 3. Components
+* 4. Event Binding
 
 ---
 
@@ -62,7 +61,51 @@ npm install -g @angular/cli
 
 ---
 
-## 🔹 3. Project Setup
+## 🔹 3. Components
+
+Components are the building blocks of an Angular application. Each component controls a part of the UI and consists of:
+
+* HTML template (view)
+* TypeScript class (logic)
+* CSS/SCSS (styling)
+
+### Key Concepts
+- Reusable → You can use the same component multiple times
+- Encapsulated → Each component has its own logic and style
+- Modular → Break large UI into small manageable pieces
+
+👉 Components in Angular are reusable UI building blocks that combine template, logic, and styles to control a specific part of the application.
+
+### 📌 Basic Component Structure
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+  styleUrls: ['./example.component.css']
+})
+export class ExampleComponent {
+  message = 'Hello from Component!';
+}
+```
+
+### 📌 Template Example
+
+```html
+<h2>{{ message }}</h2>
+```
+
+### 💡 Key Points:
+
+* Components are reusable
+* Each component has its own scope
+* Defined using `@Component` decorator
+
+---
+
+## 🔹 4. Project Setup
 
 ### 📦 Create a New Project
 
@@ -75,6 +118,10 @@ ng new <project-name>
 ```bash
 cd <project-name>
 ```
+
+---
+
+## 🔹 4. Generate Components & Services
 
 ### 📌 Generate Component
 
@@ -102,6 +149,10 @@ ng g s <service-name>
 ng g p <pipe-name>
 ```
 
+---
+
+## 🔹 5. Running the Application
+
 ### ▶️ Start Development Server
 
 ```bash
@@ -115,6 +166,8 @@ http://localhost:4200
 ```
 
 ---
+
+## 🔹 6. Useful Commands
 
 ### 📊 Check Angular Version
 
@@ -136,6 +189,15 @@ ng help
 * Angular CLI simplifies development workflow
 * Use CLI commands to generate components, services, and more
 * Run applications locally using `ng serve`
+
+---
+
+## 💡 Next Steps
+
+* Learn Data Binding (Property, Event, Two-way)
+* Understand Components & Lifecycle Hooks
+* Explore Services & Dependency Injection
+* Work with Routing and HTTP Client
 
 ---
 
