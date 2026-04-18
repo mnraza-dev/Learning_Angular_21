@@ -1,59 +1,150 @@
-# AngularBasics
+# 🚀 Angular 21
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+A beginner-friendly guide covering core Angular concepts, CLI usage, and basic features to get started quickly.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📌 Table of Contents
+
+* 1. Interpolation
+* 2. Angular CLI
+* 3. 
+* 4. 
+* 5. 
+
+---
+
+## 🔹 1. Interpolation
+
+Interpolation is a fundamental Angular concept used to bind data from your component (TypeScript) to your template (HTML).
+
+### ✅ Syntax:
+
+```html
+{{ expression }}
+```
+
+### 📌 Example:
+
+```ts
+export class AppComponent {
+  title = 'Angular 21 App';
+}
+```
+
+```html
+<h1>{{ title }}</h1>
+```
+
+👉 Output:
+
+```
+Angular 21 App
+```
+
+### 💡 Key Points:
+
+* Used for displaying dynamic data
+* Supports expressions (not statements)
+* One-way data binding
+
+---
+
+## 🔹 2. Angular CLI
+
+Angular CLI (Command Line Interface) helps you create, manage, and build Angular applications efficiently.
+
+### 🛠️ Installation:
+
+```bash
+npm install -g @angular/cli
+```
+
+---
+
+## 🔹 3. Project Setup
+
+### 📦 Create a New Project
+
+```bash
+ng new <project-name>
+```
+
+### 📁 Navigate to Project Folder
+
+```bash
+cd <project-name>
+```
+
+### 📌 Generate Component
+
+```bash
+ng generate component <component-name>
+```
+
+### 📌 Generate Service
+
+```bash
+ng generate service <service-name>
+```
+
+### 📌 Generate Pipe
+
+```bash
+ng generate pipe <pipe-name>
+```
+
+👉 Short aliases:
+
+```bash
+ng g c <component-name>
+ng g s <service-name>
+ng g p <pipe-name>
+```
+
+### ▶️ Start Development Server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 🌐 Open in Browser
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+
+### 📊 Check Angular Version
 
 ```bash
-ng generate --help
+ng version
 ```
 
-## Building
-
-To build the project run:
+### 📖 Get Help
 
 ```bash
-ng build
+ng help
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🎯 Summary
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+* Interpolation allows dynamic data binding in templates
+* Angular CLI simplifies development workflow
+* Use CLI commands to generate components, services, and more
+* Run applications locally using `ng serve`
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 🧑‍💻 Author
 
-For end-to-end (e2e) testing, run:
+Maintained by **mnraza-dev**
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## ⭐ Support
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+If you found this helpful, consider giving the repository a ⭐ on GitHub!
