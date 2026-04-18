@@ -8,10 +8,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  btnDisabled = true;
-  inputReadOnly = false;
-
-  toggleBtn() {
-    this.btnDisabled = !this.btnDisabled;
-  }
+  title = signal('Angular Basics');
+  count = signal(0);
 }
